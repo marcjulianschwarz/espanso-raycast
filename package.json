@@ -1,0 +1,60 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "espanso",
+  "title": "Espanso",
+  "description": "Control Espanso with Raycast",
+  "icon": "command-icon.svg",
+  "author": "marcjulian",
+  "categories": [
+    "Productivity",
+    "Developer Tools",
+    "Applications"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "listTriggers",
+      "title": "List Triggers",
+      "subtitle": "Espanso",
+      "description": "List all triggers.",
+      "mode": "view"
+    },
+    {
+      "name": "addTriggerCommand",
+      "title": "Add Trigger",
+      "subtitle": "Espanso",
+      "description": "Add a new trigger.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "espansoPath",
+      "title": "Espanso Path",
+      "description": "Path to espanso match folder",
+      "type": "directory",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.45.2",
+    "yaml": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
